@@ -1,0 +1,54 @@
+<!-- transform-style 
+ flat 
+ preserve-3d
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform-style</title>
+  <style>
+    div{
+      font-size: 30px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .parents{
+      width: 400px;
+      height:250px;
+      margin:0 0 70px 100px;
+      background-color:gray;
+      perspective: 800px;
+      transform:rotatey(60deg);
+      transform-style:preserve-3d;
+    }
+    .child{
+      width: 400px;
+      height:250px;
+      background-color:pink;
+      /* padding-top:20px; */
+      transform:rotatez(60deg);
+      /* transform-origin: bottom; */
+      animation-name: faiyaz;
+      animation-duration:5s;
+      animation-iteration-count: infinite;
+    
+
+    }
+    @keyframes faiyaz {
+      from{transform: rotatey(0deg);}
+      to{transform:rotatey(360deg);}
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parents">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

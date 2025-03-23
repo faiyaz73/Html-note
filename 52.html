@@ -1,0 +1,55 @@
+<!-- border-image  
+ 1- border-image-source
+ 2- border-image- slice:21;
+ 3-border-image-width:300px;
+ 4-border-image-outset:20px;
+ 5-border-image-repeat:round/repeat/streach/space;
+ 
+ 6-boder-image:source|slice|width|outset|repeat;-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border-image </title>
+  <style>
+    
+    .main{
+      border:20px solid blue;
+      margin:0 auto;
+      width: 300px;
+      height:300px;
+       /* border-image-source: url(border1.jpg);
+      border-image-slice:30 20;
+       border-image-repeat:stretch repeat center; 
+      border-image-width:10px;
+      border-image-outset:20px; 
+      border-image:linear-gradient(red,yellow,blue) 25 !important;  */
+
+       border: 2px solid red; 
+
+      border-image-source:url(border1.jpg);
+      border-image-slice:10;
+      /* border-image-repeat:repeat-x;  */
+      border-image-repeat: round stretch;
+      border-image-width:10px;
+      border-image-outset:10px;  
+
+    }
+  </style>
+ </head>
+ <body>
+  <h1>boder-images property </h1>
+
+  
+   <div class="main">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione nihil deleniti recusandae, est rerum iste dolore veniam, alias illo dignissimos saepe. Blanditiis amet vitae, neque ex quos laborum esse.
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione nihil deleniti recusandae, est rerum iste dolore veniam, alias illo dignissimos saepe. Blanditiis amet vitae, neque ex quos laborum esse.
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione nihil deleniti recusandae, est rerum iste d
+    
+
+   </div>
+ 
+ </body>
+ </html> 
+ 

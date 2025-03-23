@@ -1,0 +1,38 @@
+<!-- writting-mode  
+1-horizontal-tb(defalut) 
+2-vertical-rl:
+3-vertical-lr:
+4-sideways-rl:
+5-sideways-lr:
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>writting mode </title>
+  <style>
+    h1{
+      writing-mode:sideways-rl;
+    }
+    .main{
+      width:300px;
+      height: 300px;
+      border: 2px solid blue;
+      /* writing-mode:vertical-rl; */
+      writing-mode: horizontal-tb;
+      text-indent: 30px;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>writting mode </h1>
+  <div class="main">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod alias, porro temporibus libero dolorem, tempora delectus fugit sapiente hic praesentium rerum illo minima, distinctio doloremque dolore dicta? Voluptates, earum minima.
+  </div>
+</body>
+</html>

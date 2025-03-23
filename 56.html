@@ -1,0 +1,101 @@
+<!-- display table -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family:arial;
+      font-size: 20px;
+      line-height: 24px;
+
+    }
+    h1{
+      text-align: center;
+      margin-bottom:20px;
+
+    
+    
+    }
+  #table{
+    display: table;
+
+    width: 600px;
+    border:1px solid green;
+    margin:0px auto;
+
+  }
+  .col{
+    border: 1px solid blue;
+    display:table-cell;
+    padding:5px;
+
+  }
+  .row{
+    display:table-row;
+  }
+  #head-head{
+    background-color:yellow;
+    font-weight:bold;
+    display:table-header-group;
+  }
+  .footer{
+    display:table-footer-group;
+    background-color: green;
+  }
+  .caption{
+    display:table-caption;
+    text-align: center;
+    text-transform: uppercase;
+    color:red;
+  }
+  </style>
+</head>
+<body>
+  <h3>Display table</h3>
+<div id="table">
+  <div class="caption">
+    <h2>Student Information : </h2>
+  </div>
+  <div id="head-head">
+    <div class="col">Roll Numbers</div>
+  <div class="col"> Student Name</div>
+  <div class="col">Age</div>
+  </div>
+<div class="row">
+  <div class="col">1</div>
+  <div class="col">FAIYAZ</div>
+  <div class="col">23</div>
+</div>
+<div class="row">
+  <div class="col">2</div>
+  <div class="col">FIROJ</div>
+  <div class="col">24</div>
+</div>
+<div class="row">
+  <div class="col">3</div>
+  <div class="col">HITESH</div>
+  <div class="col">40</div>
+</div>
+<div class="row">
+  <div class="col">4</div>
+  <div class="col">KAMLESH</div>
+  <div class="col">34</div>
+</div>
+
+
+
+<div class="footer">
+  <div class="col">Total numbers :</div>
+  <div class="col">All Name</div>
+  <div class="col">Full ages :</div>
+</div>
+  
+</body>
+</html>
+
+

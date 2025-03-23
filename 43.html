@@ -1,0 +1,64 @@
+<!-- transform 3D property 
+ rotatex(angle)
+ rotatey(angle)
+ rotatez(angle)
+ rotate3d(x,y,z,angle)
+ translatez(z)
+ tanslate3d(x,y,z)
+ scale3d(x,y,z)
+ scalez(z)
+ perspective(n)
+ matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n);
+ none
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform 3D property </title>
+  <style>
+    .main{
+      width: 400px;
+      height: 400px;
+      background-color: red;
+      border: 1px solid blue;
+      margin:auto;
+    }
+    .main1{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      margin: auto;
+      margin-top:150px;
+
+      
+    }
+    .main1:hover{
+      /* transform-origin:top left; */
+      transform:perspective(900px) rotatez(300deg) translatex(140px);
+      
+      
+       /* perspective: 500px; */
+       /* transform: rotateX(40deg); */
+       /* transform: rotate3d(30px,40px,40px,40deg);
+       transform: translate(220px); */
+/* transform: scale(2); */
+border-radius: 20px;
+background-color:blue;
+border: 10px solid pink;
+
+
+
+
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+  <div class="main1"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- Drop down menu bar  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+    .menu{
+      width: 1170px;
+      margin: auto;
+      background-color:red;
+  
+    }
+    .menuitem1{
+      float: left;
+      padding: 15px 25px;
+      border: 1px solid rgb(68, 155, 10);
+      position: relative;
+     
+    
+    }
+    .clear{
+      clear:both;
+    }
+    .submenu{
+      
+      background-color:rgba(255,0,0,0.1);
+      position:absolute;
+     left: 0px;
+     top:100%;  
+      width:100%;
+      display: none;
+    }
+.submenuitem{
+  padding:10px;
+  background-color:rgba(255,0,0,0.1);
+  
+}
+.menuitem1:hover{
+  display:show;
+  background-color: yellow;
+}
+.menuitem1:hover .submenu{
+  display:inline;
+  background-color:blue;
+  cursor: pointer;
+}
+.submenuitem a{
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menuitem1">HOME</div>
+    <div class="menuitem1">ABOURT</div>
+    <div class="menuitem1">COURCE
+       <div class="submenu"> 
+        <div class="submenuitem"><a href="57.html">php</a></div>
+        <div class="submenuitem"><a href="">java</a></div>
+        <div class="submenuitem"><a href="">python</a></div>
+        <div class="submenuitem"><a href="">MySql</a></div>
+        <div class="submenuitem"><a href="">Excel</a></div>
+      </div> 
+    </div>
+    
+    <div class="menuitem1">GALLERY</div>
+    <div class="menuitem1">CONTACT US</div>
+    <div class="menuitem1">ADDRESS</div>
+    <div class="clear"></div>
+  </div>
+
+</body>
+</html>

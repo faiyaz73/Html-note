@@ -1,0 +1,30 @@
+<!-- attributes function 
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p::after{
+        content: attr(class);
+       
+        color:red;
+      }
+      p::before{
+        content: attr(id);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my name is faiyaz </h1>
+    <p class="my name" class=="dg">sgit online </p>
+    <p class="amount">sgit online </p>
+    <p id="ramesh"></p>
+    <p data-caption>sgit online </p>
+  </body>
+  </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+      list-style: none;
+
+    }
+
+    .menu{
+      width: 1150px;
+      margin: auto;
+      background-color: red;
+    
+    }
+    .menu>ul{                                       
+      display: flex;
+    }
+    .menu>ul>li{
+      list-style: none;
+      padding: 12px 25px;
+      border-right: 2px solid white;
+      color: white;
+      position:relative;
+
+    }
+    .submenu{
+      position: absolute;
+      width: 120px;
+      background-color: yellow;
+      color: black;
+      left: -100px;
+      top:100%;
+      opacity: 0;
+      transition:0.1s;
+      visibility: hidden;
+      
+    }
+    .submenu li{
+      padding:12px;
+      
+    }
+    .menu>ul>li:hover .submenu{
+      opacity: 1;
+      left:10px;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li>About</li>
+      <li>Course
+<ul class="submenu" style="width:100px;">
+  <li>php</li>
+  <li>java</li>
+  <li>python
+    
+  </li>
+  <li>c</li>
+  <li>c++</li>
+  <li>ruby</li>
+  <li>c#</li>
+</ul>
+
+        
+      </li>
+      <li>Gallary</li>
+      <li>Contact Us</li>
+      <li>Enquiry </li>
+    </ul>
+
+  </div>
+</body>
+</html>

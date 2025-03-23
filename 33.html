@@ -1,0 +1,56 @@
+<!--table property;
+ table-spacing
+ border-collapse
+ vertical-align
+ caption-side
+ empty-cells
+ table-layout -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    caption{
+      caption-side:top;
+    }
+    table{
+      /* border-spacing: 20px; */
+      border-collapse: collapse;
+      width: 300px;
+     
+    }
+    table,th,td{
+      border: 2px solid gray;
+    }
+td{
+   vertical-align:center; 
+}
+  </style>
+ </head>
+ <body>
+  <table>
+    <caption>Student Record</caption>
+    <tr>
+      <th>first name</th>
+      <th>last name</th>
+      <th>amount</th>
+      <th>cources </th>
+    </tr>
+    <tr>
+      <td>faiyaz Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque animi expedita, nulla soluta voluptate reiciendis, placeat perferendis hic ipsa provident nostrum cupiditate officiis sit quibusdam natus cumque nisi blanditiis magni.</td>
+      <td>ansari</td>
+      <td>4000</td>
+      <td>java</td>
+    </tr>
+    <tr>
+      <td>ajay</td>
+      <td>yadav</td>
+      <td>3000</td>
+      <td>python</td>
+    </tr>
+  </table>
+ </body>
+ </html>
